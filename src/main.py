@@ -90,7 +90,7 @@ class MyProgram(Ui_MainWindow):
   def openFile(self, dialog):
     self.fname, _ = QtWidgets.QFileDialog.getOpenFileName \
               (dialog, "QFileDialog.getOpenFileName()",
-              "D:\\Memristors\\Arduino experiments\\NETWORKS\\Single Neuron\\",
+                "/media/cons/DATA-1.2TB1/Memristors/Arduino experiments/PulsesList",
                "All Files (*);;Logs (*.log)")
     if self.fname:
       self.dataRaw = self.openFileReader(self.fname)
